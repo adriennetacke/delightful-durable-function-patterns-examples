@@ -1,6 +1,6 @@
 ﻿# Delightful Durable Function Patterns Examples
 
-These are the accompanying examples to my talk Delightful Durable Function Patterns presented at NDC London 2020. 🥂
+These are the accompanying examples to my talk Delightful Durable Function Patterns. 🥂
 
 ![Cover slide](./cover.png)
 ## ▶ [View in Browser!](https://adriennetacke.github.io/delightful-durable-function-patterns/)

@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace FunctionsForNdcLondon
 {
-    public static class Function2
+    public static class HelloDurableFunction
     {
         // 2. OrchestrationFunction instance created
         // Steps are outlined and started with first CallActivityAsync call
@@ -21,11 +21,10 @@ namespace FunctionsForNdcLondon
             var outputs = new List<string>();
 
             // Replace "hello" with the name of your Durable Activity Function.
-            outputs.Add(await context.CallActivityAsync<string>("ActivityFunction", "Tokyo"));
-            outputs.Add(await context.CallActivityAsync<string>("ActivityFunction", "Seattle"));
-            outputs.Add(await context.CallActivityAsync<string>("ActivityFunction", "London"));
+            outputs.Add(await context.CallActivityAsync<string>("ActivityFunction", "Stockholm"));
+            outputs.Add(await context.CallActivityAsync<string>("ActivityFunction", "Malmö"));
+            outputs.Add(await context.CallActivityAsync<string>("ActivityFunction", "Gothenburg"));
 
-            // returns ["Hello Tokyo!", "Hello Seattle!", "Hello London!"]
             return outputs;
         }
 
